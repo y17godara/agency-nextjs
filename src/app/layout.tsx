@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={"text-textPrimary bg-paperLight dark:text-paperLight dark:bg-defaultDark "+ inter.className}>
         <div id="__next">
           <main>{children}</main>
         </div>
