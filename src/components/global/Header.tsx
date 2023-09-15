@@ -50,7 +50,7 @@ export const Header = () => {
             <div className="flex items-center">
               <button
                 onClick={toggleMobileMenu}
-                className="text-gray-600 hover:text-gray-800 focus:outline-none"
+                className="text-gray-600 hover:text-gray-800 focus:outline-none dark:text-defaultLight dark:hover:text-paperLight dark:focus:text-paperLight"
               >
                 {isMobileMenuOpen ? (
                   <svg
