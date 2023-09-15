@@ -3,7 +3,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <>
-      <footer className="px-4 sm:px-6 py-6">
+      <footer className="px-4 sm:px-6 py-6  bg-paperLight shadow-sm dark:bg-paperDark dark:shadow-[#424242]">
         <div className="text-center text-sm text-gray-500">
           <span className="dark:text-gray-100 text-gray-900 font-bold text-lg mr-2">
             {" "}
