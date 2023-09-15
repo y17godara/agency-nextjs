@@ -1,3 +1,6 @@
+import { Provider } from "@/lib";
+import React from "react";
+import { Header, Footer } from "@/components";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -16,11 +19,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={"text-textPrimary bg-paperLight dark:text-paperLight dark:bg-defaultDark "+ inter.className}>
+      <Provider>
+      <body className={"min-h-screen mx-auto max-w-6xl flex flex-col text-textPrimary bg-paperLight dark:text-paperLight dark:bg-defaultDark "+ inter.className}>
         <div id="__next">
+          <Header />
           <main>{children}</main>
+          <Footer />
         </div>
       </body>
+      </Provider>
     </html>
   );
 }
