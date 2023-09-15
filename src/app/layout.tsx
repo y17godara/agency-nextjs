@@ -26,12 +26,12 @@ export default function RootLayout({
           )}
           >
           <Provider>
-          <div id="__next" className="relative max-w-6xl">
+          <div id="__next" className="relative">
             <header className="relative z-[999]">
               <Header />
             </header>
-            <main className="relative min-h-[100vh] z-[10]">{children}</main>
-            <footer className="relative z-[10]">
+            <main className="min-h-[100vh] min-w-full z-[10]">{children}</main>
+            <footer className="w-full z-[10]">
               <Footer />
             </footer>
           </div>

@@ -5,7 +5,8 @@ interface Props {
   height?: string;
 }
 
-export function VerticalLine({ color = "gray-400", height = "4" }: Props) {
-
-  return <span className={cn("border-r", `border-${color}`, `h-${height}`)}></span>;
+export default function VerticalLine({ color, height }: Props) {
+  return (
+    <span className={cn("border-r", `border-${color}`, `h-${height}`)}></span>
+  );
 }
