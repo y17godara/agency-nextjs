@@ -2,7 +2,11 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='flex w-full'>
+      <div className='mt-10'>
+      Home Page
+      </div>
+    </div>
   )
 }
 

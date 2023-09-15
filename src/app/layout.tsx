@@ -1,4 +1,4 @@
-import { Provider } from "@/lib";
+import { Provider, cn } from "@/lib";
 import React from "react";
 import { Header, Footer } from "@/components";
 import "@/styles/globals.css";
@@ -19,15 +19,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Provider>
-      <body className={"min-h-screen mx-auto max-w-6xl flex flex-col text-textPrimary bg-paperLight dark:text-paperLight dark:bg-defaultDark "+ inter.className}>
-        <div id="__next">
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </div>
-      </body>
+        <body
+          className={cn(
+            " text-textPrimary bg-paperLight dark:text-textSecondaryDark dark:bg-defaultDark ",
+            inter.className
+          )}
+          >
+          <Provider>
+          <div id="__next" className="relative max-w-6xl">
+            <header className="relative z-[999]">
+              <Header />
+            </header>
+            <main className="relative min-h-[100vh] z-[10]">{children}</main>
+            <footer className="relative z-[10]">
+              <Footer />
+            </footer>
+          </div>
       </Provider>
+        </body>
     </html>
   );
 }
