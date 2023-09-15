@@ -19,24 +19,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body
-          className={cn(
-            " text-textPrimary bg-paperLight dark:text-textSecondaryDark dark:bg-defaultDark ",
-            inter.className
-          )}
-          >
-          <Provider>
+      <body
+        className={cn(
+          " text-textPrimary bg-paperLight dark:text-textSecondaryDark dark:bg-defaultDark ",
+          inter.className
+        )}
+      >
+        <Provider>
           <div id="__next" className="relative">
             <header className="relative z-[999]">
               <Header />
             </header>
-            <main className="min-h-[100vh] min-w-full z-[10]">{children}</main>
-            <footer className="w-full z-[10]">
+            <main className="w-full pt-24">
+              {children}
+            </main>
+            <footer className="w-full">
               <Footer />
             </footer>
           </div>
-      </Provider>
-        </body>
+        </Provider>
+      </body>
     </html>
   );
 }
