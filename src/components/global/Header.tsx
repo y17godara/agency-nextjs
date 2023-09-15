@@ -37,7 +37,11 @@ export const Header = () => {
           </div>
         </section>
         <div className="w-full border-b dark:border-gray-400 "></div>
-        <nav className="w-full h-16 flex justify-between items-center p-2 bg-paperLight shadow-sm dark:bg-paperDark dark:shadow-[#424242] md:px-4 xl:px-8">Navbar</nav>
+        <nav className="max-w-full h-16 flex justify-between items-center p-2 bg-paperLight shadow-sm dark:bg-paperDark dark:shadow-[#424242] md:px-4 xl:px-8">
+          <div className="lg:w-9/12 lg:mx-auto">
+          Navbar
+          </div>
+        </nav>
       </div>
     </>
   );
