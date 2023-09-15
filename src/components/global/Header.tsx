@@ -35,6 +35,10 @@ export const Header = () => {
             </Link>
           </div>
           <div className="flex items-center gap-1 md:gap-2 xl:gap-4">
+          <Link href="/en-En" className="text-sm hover:underline">
+              en-US
+            </Link>
+            <VerticalLine color="gray-400" height="4" />
             <Link href="/auth/login" className="text-sm hover:underline">
               Login
             </Link>
@@ -44,8 +48,15 @@ export const Header = () => {
         </section>
         <div className="w-full border-b dark:border-gray-400 "></div>
         <nav className="max-w-full h-16 flex justify-between items-center p-2 bg-paperLight shadow-sm dark:bg-paperDark dark:shadow-[#424242] md:px-4 xl:px-8">
-          <div className="flex items-center lg:w-9/12 lg:mx-auto">
+          <div className="flex items-center justify-between w-full lg:w-9/12 lg:mx-auto">
             {/* Navbar */}
+            <div className="flex items-center">
+              <Link href="/"
+                className="bold text-defaultDark hover:text-gray-800 focus:outline-none dark:text-defaultLight dark:hover:text-paperLight dark:focus:text-paperLight"
+              >
+                LOGO
+              </Link>
+            </div>
             {/* Mobile Menu Button */}
             <div className="flex items-center">
               <button
