@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link
               href="/"
-              className="bold text-defaultDark hover:text-gray-800 focus:outline-none dark:text-defaultLight dark:hover:text-paperLight dark:focus:text-paperLight"
+              className="bold text-defaultDark font-bold hover:text-gray-800 focus:outline-none dark:text-defaultLight dark:hover:text-paperLight dark:focus:text-paperLight"
             >
               LOGO
             </Link>

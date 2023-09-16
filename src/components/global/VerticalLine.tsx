@@ -10,3 +10,4 @@ export default function VerticalLine({ color, height }: Props) {
     <span className={cn("border-r", `border-${color}`, `h-${height}`)}></span>
   );
 }
+// "border-r border-gray-700 h-4
